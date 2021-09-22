@@ -6,7 +6,9 @@
     "window": {
         "navigationBarTitleText": "Demo",
         "navigationBarBackgroundColor": "#ff0000",
-        "enablePullDownRefresh": true
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light"
     },
     "tabBar": {
         "list": [

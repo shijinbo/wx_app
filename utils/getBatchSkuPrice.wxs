@@ -1,0 +1,10 @@
+module.exports = function (sku) {
+    if (sku == null || sku=='' || sku==undefined) {
+        return ''
+    }
+    var priceHtml = parseFloat(sku.price).toFixed(2) + '';
+    if (sku.isBatchSku == '1') {
+        priceHtml = parseFloat(sku.lowestBatchPrice).toFixed(2) + '起';
+    }
+    return priceHtml;
+};

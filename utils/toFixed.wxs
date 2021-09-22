@@ -1,0 +1,6 @@
+module.exports = function (num, scale = 2) {
+    if (num === null || isNaN(num)) {
+        return '';
+    }
+    return num.toFixed(scale)
+};

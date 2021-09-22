@@ -1,0 +1,5 @@
+module.exports = function (receiveTime, couponEndtime) {
+    var time1 = receiveTime && receiveTime.split(" ")[0]
+    var time2 = couponEndtime && couponEndtime.split(" ")[0]
+    return time1 + '——' + time2
+};

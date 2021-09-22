@@ -1,0 +1,6 @@
+module.exports = function (num) {
+    if (num === null || isNaN(num)) {
+        return '';
+    }
+    return parseInt(num)
+};
