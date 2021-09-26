@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+}
+.align_center{
+    align-items: center;
+}
+.dir_column {
+    flex-direction: column;
+}
+.jc_sb{
+    justify-content: space-between;
+}
+
+.mr20{
+    margin-right:20rpx ;
+}
+.mt20{
+    margin-top: 20rpx;
+}

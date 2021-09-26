@@ -1,2 +1,44 @@
-<!--pages/logs/index.wxml-->
-<text>pages/logs/index.wxml</text>
+<view class="logs_box">
+    <view>
+        <view class="head flex">
+            <view class="head_logo mr20">
+                <image src="/assets/img/defaultUserImg.png" />
+            </view>
+            <view class="head_title">
+                <view class="head_name">这个用户名</view>
+                <test class="head_level">
+                    <image src="/assets/img/vip.png" />成长值 level
+                </test>
+            </view>
+        </view>
+        <view class="mt20 head_vip border-radius">
+            <view class="flex jc_sb vip_title align_center">
+                <view class="vip_name">V2 黄金会员</view>
+                <view class="flex align_center">
+                    去升级
+                    <image src="/assets/img/detail_arrow.png" />
+                </view>
+            </view>
+            <view class="flex jc_sb">
+                <test>购物返积分</test>
+                <test>肉禽品类券</test>
+                <test>周二会员日</test>
+            </view>
+        </view>
+        <view class="mt20 border-radius">
+            <view>
+                <view>￥0.00</view>
+                余额
+            </view>
+            <view>
+                <view>0</view>
+                积分兑换
+            </view>
+            <view>
+                <test>0</test>
+                优惠券
+            </view>
+        </view>
+
+    </view>
+</view>

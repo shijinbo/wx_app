@@ -1,1 +1,59 @@
-/* pages/logs/index.wxss */
+@import "/styles/common.wxss";
+.logs_box{
+    font-size: 28rpx;
+    padding: 20rpx 30rpx 0 30rpx;
+}
+.logs_box .head{
+  align-items: center;
+}
+.logs_box .head .head_logo{
+    width: 120rpx;
+    height: 120rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.head .head_logo image {
+    width: 100%;height: 100%;
+}
+.head .head_title .head_name{
+    font-weight: bold;
+}
+.head .head_title .head_level{
+    font-size: 20rpx;
+    display: flex;
+    align-items: center;
+    height: 30rpx;
+    line-height: 40rpx;
+    margin-top: 10rpx;
+    padding-right: 15rpx;
+    background: #e9e9e9;
+    border-radius: 8rpx 0 8rpx 0;
+}
+.head_title .head_level image{
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+
+.head_vip{
+    padding: 15rpx;
+    font-size: 24rpx;
+    color: #686819;
+    background-image: linear-gradient(to right, yellow, #d8d88f, yellow);
+}
+.head_vip .vip_title{
+    line-height: 70rpx;
+}
+
+.head_vip .vip_title image{
+    width: 24rpx ;height: 24rpx;
+}
+.head_vip .vip_name{
+    font-size: 32rpx;
+}
+
+.border-radius{
+    border-radius: 16rpx;
+}
