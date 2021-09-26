@@ -2,43 +2,70 @@
     <view>
         <view class="head flex">
             <view class="head_logo mr20">
-                <image src="/assets/img/defaultUserImg.png" />
+                <image src="{{!!user.user_logo ? user.user_logo: '/assets/img/defaultUserImg.png'}}" />
             </view>
             <view class="head_title">
-                <view class="head_name">这个用户名</view>
+                <view class="head_name">{{user.user_name}}</view>
                 <test class="head_level">
-                    <image src="/assets/img/vip.png" />成长值 level
+                    <image src="/assets/img/vip.png" />成长值 {{user.level}}/{{user.maxLevel}}
                 </test>
             </view>
         </view>
-        <view class="mt20 head_vip border-radius">
+        <view class=" head_vip logs_item">
             <view class="flex jc_sb vip_title align_center">
-                <view class="vip_name">V2 黄金会员</view>
+                <view class="vip_name">V{{user.vip_level}} {{vip_options[user.vip_level]}}</view>
                 <view class="flex align_center">
                     去升级
                     <image src="/assets/img/detail_arrow.png" />
                 </view>
             </view>
             <view class="flex jc_sb">
-                <test>购物返积分</test>
-                <test>肉禽品类券</test>
-                <test>周二会员日</test>
+                <text wx:for="{{vip_serve}}" wx:key="index">{{item}}</text>
             </view>
         </view>
-        <view class="mt20 border-radius">
+        <view class="wallet logs_item flex jc_sb">
             <view>
-                <view>￥0.00</view>
-                余额
+                <view class="mt20">￥{{user.wallet.price}}</view>
+                <text>余额</text>
             </view>
             <view>
-                <view>0</view>
-                积分兑换
+                <view class="mt20">{{user.wallet.integral}}</view>
+                <text>积分兑换</text>
             </view>
             <view>
-                <test>0</test>
-                优惠券
+                <view class="mt20">{{user.wallet.coupon}}</view>
+                <text>优惠券</text>
             </view>
         </view>
-
+        <view class="order_list logs_item">
+            <view class="flex jc_sb order_list_head align_center">
+                <view class="order_list_name">我的订单</view>
+                <view class="order_list_all">
+                全部订单<image src="/assets/img/detail_arrow.png" />
+                </view>
+            </view>
+            <view class="order_tabs flex jc_sb align_center">
+                <view>
+                    <image src="/assets/img/order1.png"/>
+                    <view>待付款</view>
+                </view>
+                <view>
+                    <image src="/assets/img/order2.png"/>
+                    <view>待发货</view>
+                </view>
+                <view>
+                    <image src="/assets/img/order3.png"/>
+                    <view>待收货</view>
+                </view>
+                <view>
+                    <image src="/assets/img/order4.png"/>
+                    <view>退款/退货</view>
+                </view>
+                <view>
+                    <image src="/assets/img/order5.png"/>
+                    <view>待评价</view>
+                </view>
+            </view>
+        </view>
     </view>
 </view>

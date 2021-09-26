@@ -7,7 +7,7 @@
         "navigationBarTitleText": "Demo",
         "navigationBarBackgroundColor": "#ff0000",
         "navigationBarTextStyle": "black",
-        "backgroundColor": "#eeeeee",
+        "backgroundColor": "#ff0000",
         "backgroundTextStyle": "light"
     },
     "tabBar": {

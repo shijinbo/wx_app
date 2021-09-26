@@ -5,7 +5,26 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        user: {
+            user_logo: '',
+            user_name: '用户名',
+            level: 99,
+            maxLevel: 1000,
+            vip_level: 2,
+            wallet: {
+               price: '0.00' ,
+               integral: 0,
+               coupon: 0
+            }
+        },
+        vip_options: {
+            1: '青铜会员',
+            2: '白银会员',
+            3: '黄金会员',
+            4: '铂金会员',
+            5: '钻石会员'
+        },
+        vip_serve:['购物返积分', '肉禽品类券', '周二会员日']
     },
 
     /**
